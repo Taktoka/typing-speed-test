@@ -1,0 +1,178 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: cursive;
+  background-color: #020402;
+}
+.game {
+  width: 900px;
+  min-height: 100vh;
+  margin: 20px auto;
+}
+.container {
+  width: 800px;
+  margin-top: 35px;
+}
+.game-name {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+.game-name::before,
+.game-name::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background-color: #fff;
+  left: -5px;
+}
+.game-name::after {
+  bottom: 0;
+}
+.game-name::before {
+  top: 0;
+}
+
+.message {
+  background-color: #ffffffc9;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.custom-select {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  margin-right: 10px;
+  font-weight: bold;
+  position: relative;
+}
+.label::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 8px;
+  left: -22px;
+  background-color: #2196f3;
+}
+.lvls {
+  display: flex;
+  list-style: none;
+}
+.lvls li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.lvls li.active {
+  background-color: #2196f3;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  display: block;
+}
+
+.you-have {
+  flex: 1;
+}
+.message span {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #2196f3;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.the-word {
+  color: var(--main-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  user-select: none;
+}
+.input {
+  margin: 15px auto;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upCopming-word {
+  background-color: #ffffffc9;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upCopming-word div {
+  background-color: var(--main-color);
+  font-weight: bold;
+  color: white;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffffc9;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #2196f3;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 15px;
+  text-align: center;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: #db0606;
+}
